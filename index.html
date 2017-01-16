@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  
+	  <script>
+	  
+			var list=[
+			        {"p":"http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/901/573/80901573_1480671415364_1_600x600.JPG",
+					 "t":"♫韓劇《孤單又燦爛的神－鬼怪》ost.1 - Stay With Me",
+					 "c":"燦烈（EXO）& Punch",
+					 "l":"http://eros90316.pixnet.net/blog/post/64755661-%E2%99%AB%E9%9F%93%E5%8A%87%E3%80%8A%E5%AD%A4%E5%96%AE%E5%8F%88%E7%87%A6%E7%88%9B%E7%9A%84%E7%A5%9E%EF%BC%8D%E9%AC%BC%E6%80%AA%E3%80%8Bost.1---stay-wi"},
+					{"p":"https://pic.pimg.tw/justinjoely/1465569508-79617274.png",
+					 "t":"Treat You Better (含中文歌詞)",
+					 "c":"Shawn Mendes",
+					 "l":"http://justinjoely.pixnet.net/blog/post/218584821"},
+					{"p":"https://pic.pimg.tw/aerirabbit/1475194344-40191323.jpg?v=1475194351",
+					 "t":"All We Know 中文歌詞翻譯",
+					 "c":"The Chainsmokers",
+					 "l":"http://aerirabbit.pixnet.net/blog/post/452741429-the-chainsmokers---all-we-know-%E4%B8%AD%E6%96%87%E6%AD%8C%E8%A9%9E%E7%BF%BB%E8%AD%AF"},
+					{"p":"https://i0.wp.com/lineday.co/wp-content/uploads/2015/04/John-Legend-%E2%80%93-All-of-Me-e1428925747490.jpg?fit=615%2C503&ssl=1",
+					 "t":"All of Me",
+					 "c":"John Legend 中英翻譯歌詞",
+					 "l":"http://chy12.pixnet.net/blog/post/102721471"},
+					{"p":"https://i.ytimg.com/vi/Rmtx9slmodw/maxresdefault.jpg",
+					 "t":"Faded 淡出【中文翻譯+歌詞】#JT的翻譯小窩#",
+					 "c":"Alan Walker 艾倫沃克 ",
+					 "l":"http://jt1901.pixnet.net/blog/post/323347563"},
+					{"p":"http://thetorchentertainmentguide.com/wp-content/uploads/2016/10/La-La-Land-Reviews.jpg",
+					 "t":"City of Stars (電影:LA LA LAND - 樂來越愛你)  ",
+					 "c":"Ryan Gosl",
+					 "l":"http://tainanpinky.pixnet.net/blog/post/283405399-%5b-%E6%AD%8C%E8%A9%9E%E7%BF%BB%E8%AD%AF-%5d-city-of-stars-%28%E9%9B%BB%E5%BD%B1%3ala-la-land---%E6%A8%82%E4%BE%86"},
+					{"p":"http://headlineplanet.com/home/wp-content/uploads/2016/07/The-Chainsmokers-Closer-Cover-1024x1024.jpg",
+					 "t":"The Chainsmokers-Closer",
+					 "c":"ft. Halsey海爾賽",
+					 "l":"http://bernice0806.pixnet.net/blog/post/44087077-%5b%E4%B8%AD%E8%8B%B1%E6%96%87%E6%AD%8C%E8%A9%9E%5d-the-chainsmokers-closer-%28ft.-halsey%E6%B5%B7%E7%88%BE"},
+					{"p":"https://i.ytimg.com/vi/Mclb_qN9Dgg/maxresdefault.jpg",
+					 "t":"Photograph 中文歌詞",
+					 "c":"Ed Sheeran ",
+					 "l":"http://valeriefunyu.pixnet.net/blog/post/161475561"}
+					
+					 ];
+
+			var str='';
+			
+			function f()
+			{
+				for(i=0;i<list.length;i++)
+				{
+					str+=
+					'<li class="collection-item avatar"><img src="'
+					+list[i].p+
+					'" alt="" class="circle"><span class="title">'
+					+list[i].t+
+					'</span><p>'
+					+list[i].c+
+					'</p><a href="'
+					+list[i].l+
+					'" target="blank" class="secondary-content"><i class="material-icons">grade</i></a></li>';
+				}
+				document.getElementById("music").innerHTML=str;
+			}
+			
+	  </script>
+	  
+    </head>
+
+    <body onload="f()">
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  
+	  <ul class="collection" id="music">
+	  
+	  </ul>
+  
+    </body>
+  </html>
